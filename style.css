@@ -1,68 +1,82 @@
+/* Reset default margin and padding, and use flexbox to center content vertically and horizontally */
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%); /* Light gray background color */
 }
 
+/* Styling for the calculator container */
 #calculator {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(0, 0%, 0%);
-    border-radius: 50px;
-    height: 660px;
+    background-color: hsl(0, 0%, 0%); /* Black background color */
+    border-radius: 50px; /* Rounded corners */
+    height: 660px; /* Adjusted height for the calculator */
     width: 400px;
-    overflow: hidden;
+    overflow: hidden; /* Hide overflowing content */
 }
 
+/* Styling for the display area */
 #display {
-    height: 70px;
-    width: 280px;
-    border-radius: 20px;
-    margin-top: 35px;
-    margin-left: 30px;
-    padding: 30px;
-    font-size: 4rem;
-    text-align: right;
-    border-color: hsla(0, 0%, 100%, 0.29);
-    background-color:hsla(0, 0%, 40%, 0.438);
-    color: rgb(204, 255, 0);
+    height: 70px; /* Fixed height for the display */
+    width: 280px; /* Fixed width for the display */
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 35px; /* Spacing from the top */
+    margin-left: 30px; /* Spacing from the left */
+    padding: 30px; /* Padding inside the display */
+    font-size: 4rem; /* Large font size */
+    text-align: right; /* Text alignment to the right */
+    border-color: hsla(0, 0%, 100%, 0.29); /* Border color with transparency */
+    background-color:hsla(0, 0%, 40%, 0.438); /* Light gray background color with transparency */
+    color: rgb(204, 255, 0); /* Yellow text color */
 }
 
+/* Styling for the grid layout of keys */
 #keys {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 25px;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* Spacing between buttons */
+    padding: 25px; /* Padding inside the keys container */
 }
 
+/* Styling for the calculator buttons */
 button {
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-    border: none;
-    background-color: hsla(0, 0%, 100%, 0.653);
-    color: rgb(0, 0, 0);
-    font-size: 2.5rem;
-    font-weight: bold;
-    cursor: pointer;
+    width: 70px; /* Fixed width for buttons */
+    height: 70px; /* Fixed height for buttons */
+    border-radius: 50px; /* Rounded corners */
+    border: none; /* No border */
+    background-color: hsla(0, 0%, 100%, 0.653); /* Light gray background color with transparency */
+    color: rgb(0, 0, 0); /* Black text color */
+    font-size: 2.5rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Cursor pointer on hover */
 }
 
+/* Hover effect for buttons */
 button:hover {
-   background-color: hsl(0, 0%, 40%); 
+    background-color: hsl(0, 0%, 40%); /* Dark gray background color on hover */
 }
 
+/* Active effect for buttons */
 button:active {
-    background-color: hsl(0, 0%, 50%);
+    background-color: hsl(0, 0%, 50%); /* Slightly darker background color when clicked */
 }
 
+/* Styling for operator buttons */
 .operator-btn {
-    background-color: hsl(77, 100%, 50%);
+    background-color: hsl(77, 100%, 50%); /* Orange background color for operator buttons */
 }
 
+/* Hover effect for operator buttons */
 .operator-btn:hover {
-    background-color: hsl(77, 100%, 70%);
+    background-color: hsl(77, 100%, 70%); /* Lighter orange background color on hover */
+}
+
+/* Active effect for operator buttons */
+.operator-btn:active {
+    background-color: hsl(77, 100%, 80%); /* Slightly lighter orange background color when clicked */
 }
 
 .operator-btn:active {
