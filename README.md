@@ -2,5 +2,6 @@
 
 Built using HTML, CSS and JavaScript
 
-<img src="https://github.com/Shchuda/Calculator/assets/137898720/2984faf7-61a3-4b6a-af36-653e8051f6c2" width="298" height="289" />
+<img src="https://github.com/Shchuda/Calculator/assets/137898720/c5a3eb81-c0a9-4d81-87ee-5186e19cf867" width="298" height="289" />
+
 
