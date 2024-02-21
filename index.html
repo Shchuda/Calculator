@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Set the viewport to control layout on mobile browsers -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
     <title>Calculator</title>
+    <!-- Link the external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Calculator container -->
     <div id="calculator">
+        <!-- Display input field, set to readonly -->
         <input id="display" readonly>
+        <!-- Keys for input -->
         <div id="keys">
+            <!-- Operator buttons -->
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
@@ -25,11 +32,13 @@
             <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
+            <!-- Equal and Clear buttons -->
             <button onclick="calculate()">=</button>
             <button onclick="clearDisplay()" class="operator-btn">C</button>
-
         </div>
 
+        <!-- Link the JavaScript file -->
         <script src="script.js"></script>
+    </div>
 </body>
 </html>
