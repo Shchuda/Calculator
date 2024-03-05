@@ -1,4 +1,4 @@
-/* Reset default margin and padding, and use flexbox to center content vertically and horizontally */
+/* Resets default margin and padding, and use flexbox to center content vertically and horizontally */
 body {
     margin: 0;
     display: flex;
@@ -10,12 +10,12 @@ body {
 
 /* Styling for the calculator container */
 #calculator {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: myown;
     background-color: hsl(0, 0%, 0%);
     border-radius: 50px; /* Rounded corners */
     height: 660px; /* Adjusted height for the calculator */
     width: 400px;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden; /* Hides overflowing content */
 }
 
 /* Styling for the display area */
@@ -77,4 +77,9 @@ button:active {
 /* Active state for operator buttons */
 .operator-btn:active {
     background-color: hsl(16, 100%, 75%);
+}
+
+@font-face {
+    font-family: myown;
+    src: url(fonts/customized.TTF);
 }
